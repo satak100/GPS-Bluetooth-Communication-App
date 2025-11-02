@@ -212,31 +212,6 @@ int main(void) {
 
 ---
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Bluetooth Connection Fails:**
-- Ensure HC-06 is paired in Android Bluetooth settings
-- Check MAC address in BluetoothService.kt
-- Verify HC-06 is powered and in pairing mode
-
-**No GPS Data:**
-- Enable location services in Android settings
-- Grant location permissions to the app
-- Test outdoors for better GPS signal
-
-**Permission Denied:**
-- Go to Android Settings → Apps → GPS Bluetooth Transmitter → Permissions
-- Enable all required permissions
-
-**Auto-send Not Working:**
-- Ensure Bluetooth is connected
-- Check if auto-send switch is enabled
-- Verify interval is set correctly
-
----
-
 ## 🔄 Data Flow
 
 ```
@@ -261,21 +236,3 @@ GPS Sensor → FusedLocationProvider → LocationService → MainActivity → Bl
 This project is open source. Feel free to modify and distribute according to your needs.
 
 ---
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
----
-
-## 📞 Support
-
-For issues or questions:
-1. Check the troubleshooting section above
-2. Verify hardware connections
-3. Test with a simple Bluetooth terminal app first
-4. Check Android device logs for detailed error messages
